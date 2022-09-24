@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(cors());
 
 mongoose.connect(
-    "mongodb://mongo:tq7CckBowsZTgpeKacC6@containers-us-west-69.railway.app:7865/ufoods"
+    "mongodb://mongo:tq7CckBowsZTgpeKacC6@containers-us-west-69.railway.app:7865"
     , {useNewUrlParser:true});
 
 app.get("/getUsers", (req, res) => {
