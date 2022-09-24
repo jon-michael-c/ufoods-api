@@ -10,8 +10,8 @@ app.use(express.json());
 app.use(cors());
 
 mongoose.connect(
-  "mongodb+srv://jon-michael-c:Newton2559@cluster0.kwtv8.mongodb.net/merng?retryWrites=true&w=majority"
-);
+    "mongodb://mongo:tq7CckBowsZTgpeKacC6@containers-us-west-69.railway.app:7865/ufoods"
+    , {useNewUrlParser:true});
 
 app.get("/getUsers", (req, res) => {
   UserModel.find({}, (err, result) => {
